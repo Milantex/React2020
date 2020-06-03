@@ -135,7 +135,7 @@ async function repeatRequest(
         } else {
             response = {
                 status: 'ok',
-                data: res,
+                data: res.data,
             };
         }
 

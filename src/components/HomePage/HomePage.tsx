@@ -39,6 +39,8 @@ class HomePage extends React.Component {
     private getCategories() {
         api('api/category/', 'get', {})
         .then((res: ApiResponse) => {
+            console.log(res);
+
             if (res.status === "error" || res.status === "login") {
                 this.setLogginState(false);
                 return;
