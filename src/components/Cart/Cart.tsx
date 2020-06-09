@@ -76,7 +76,7 @@ export default class Cart extends React.Component {
     private calculateSum(): number {
         let sum: number = 0;
 
-        if (this.state.cart == undefined) {
+        if (this.state.cart === undefined) {
             return sum;
         } else {
             for (const item of this.state.cart?.cartArticles) {
