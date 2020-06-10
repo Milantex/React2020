@@ -96,16 +96,16 @@ export function saveRefreshToken(role: 'user' | 'administrator', token: string) 
 }
 
 export function saveIdentity(role: 'user' | 'administrator', itentity: string) {
-    localStorage.setItem('api_itentity' + role, itentity);
+    localStorage.setItem('api_identity' + role, itentity);
 }
 
 export function getIdentity(role: 'user' | 'administrator'): string {
-    const token = localStorage.getItem('api_itentity' + role);
+    const token = localStorage.getItem('api_identity' + role);
     return 'Berer ' + token;
 }
 
 async function refreshToken(role: 'user' | 'administrator'): Promise<string | null> {
-    const path = 'auth/user/refresh';
+    const path = 'auth/' + role + '/refresh';
     const data = {
         token: getRefreshToken(role),
     }
