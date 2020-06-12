@@ -3,7 +3,7 @@ import { Container, Card } from 'react-bootstrap';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Redirect, Link } from 'react-router-dom';
-import api, { ApiResponse, getIdentity } from '../../api/api';
+import api, { ApiResponse } from '../../api/api';
 import RoledMainMenu from '../RoledMainMenu/RoledMainMenu';
 
 interface AdministratorDashboardState {
