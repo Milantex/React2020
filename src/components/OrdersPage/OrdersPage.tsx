@@ -267,7 +267,7 @@ export default class OrdersPage extends React.Component {
 
     private printOrderRow(order: OrderType) {
         return (
-            <tr>
+            <tr key={ order.orderId }>
                 <td>{ order.createdAt }</td>
                 <td>{ order.status }</td>
                 <td className="text-right">

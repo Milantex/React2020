@@ -106,7 +106,7 @@ class AdministratorDashboardCategory extends React.Component {
         ));
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.getCategories();
     }
 

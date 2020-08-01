@@ -25,11 +25,11 @@ class HomePage extends React.Component {
         };
     }
 
-    componentWillMount() {
+    componentDidMount() {
         this.getCategories();
     }
 
-    componentWillUpdate() {
+    componentDidUpdate() {
         this.getCategories();
     }
 
@@ -97,7 +97,7 @@ class HomePage extends React.Component {
 
     private singleCategory(category: CategoryType) {
         return (
-            <Col lg="3" md="4" sm="6" xs="12">
+            <Col lg="3" md="4" sm="6" xs="12" key={ category.categoryId }>
                 <Card className="mb-3">
                     <Card.Body>
                         <Card.Title as="p">

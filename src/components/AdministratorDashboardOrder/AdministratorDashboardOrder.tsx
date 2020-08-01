@@ -2,7 +2,7 @@ import React from 'react';
 import ApiOrderDto from '../../dtos/ApiOrderDto';
 import api, { ApiResponse } from '../../api/api';
 import { Redirect } from 'react-router-dom';
-import { Container, Card, Table, Modal, Button, Tabs, Tab, Col, Row } from 'react-bootstrap';
+import { Container, Card, Table, Modal, Button, Tabs, Tab } from 'react-bootstrap';
 import RoledMainMenu from '../RoledMainMenu/RoledMainMenu';
 import { faCartArrowDown, faBoxOpen } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
