@@ -1,3 +1,5 @@
+This is a code repository for Node.js + Nest.js + MySQL + TypeScript + React application developed as a part of a project for the undergraduate course "Praktikum - Internet i veb tehnologije" at Singidunum University, published for students to follow its development.
+
 # Front end
 
 This is the front-end part of an application developed for educational purposes as a part of a university course.
